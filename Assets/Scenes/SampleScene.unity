@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 88313457}
   - component: {fileID: 88313456}
   - component: {fileID: 88313460}
+  - component: {fileID: 88313461}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -261,9 +262,21 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 437fa39d-8a99-4d03-9bda-077ffdef45a2
+  m_DefaultActionMap: Default Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &88313461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88313455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dbd1d01d86e6a48bfadd2197546322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReadInput
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,10 +13,11 @@ public class ReadInput : MonoBehaviour
     public event Action OnShootPressed;
     public event Action OnDrinkPotionPressed;
 
-    // Called by PlayerInput (Send Messages)
+   
     private void OnGroundMove(InputValue value)
     {
         MoveInput = value.Get<Vector2>();
+        
     }
 
     private void OnJump(InputValue value)
