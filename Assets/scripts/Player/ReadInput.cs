@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class ReadInput : MonoBehaviour
 {
     public Vector2 MoveInput { get; private set; }
+    public Vector2 LookInput { get; private set; }
 
     public event Action OnJumpPressed;
     public event Action OnRollPressed;
@@ -17,6 +18,11 @@ public class ReadInput : MonoBehaviour
     private void OnGroundMove(InputValue value)
     {
         MoveInput = value.Get<Vector2>();
+        
+    }
+    private void OnLook(InputValue value)
+    {
+        LookInput = value.Get<Vector2>();
         
     }
 
